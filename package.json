@@ -1,0 +1,17 @@
+{
+  "name": "feps",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@solana/web3.js": "^1.77.3",
+    "aes256": "^1.1.0",
+    "axios": "^1.4.0",
+    "bs58": "^5.0.0",
+    "crypto": "^1.0.1",
+    "dotenv": "^16.1.3",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.31.1",
+    "shamir": "^0.7.1"
+  }
+}
