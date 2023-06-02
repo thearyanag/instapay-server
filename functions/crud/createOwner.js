@@ -1,4 +1,4 @@
-const Owner = require('../../schema/owner.schema');
+const Owner = require('../../models/owner.model');
 
 const createOwner = async (ownerData) => {
     const newOwner = new Owner(ownerData);

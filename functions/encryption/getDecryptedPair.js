@@ -9,9 +9,9 @@ const getDecryptedPair = (samirPair1,samirPair2) => {
     };
     const privateKey = join(shares);
 
-    console.log("Decrypted Private Key: ", base58.encode(privateKey));
+    let pvtKey = base58.encode(privateKey);
 
-    return privateKey;
+    return pvtKey;
 }
 
 module.exports = getDecryptedPair;

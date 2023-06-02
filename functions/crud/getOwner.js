@@ -1,6 +1,9 @@
-const Owner = require('../../schema/owner.schema');
+const Owner = require('../../models/owner.model');
 
 const getOwner = async (domain) => {
+
+
+    domain = domain.toLowerCase() + ".sol"
     
     let owner = await Owner.findOne({ 
         where: { domain: domain }
