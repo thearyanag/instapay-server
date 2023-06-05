@@ -17,6 +17,9 @@ let connection = new Connection(`https://rpc-devnet.helius.xyz/?api-key=${token}
  * @returns {Promise<{signature: string}>}
  */
 async function sendTx(recipientWalletAddress,amount,secret) {
+    console.log("recipientWalletAddress: ", recipientWalletAddress);
+    console.log("amount: ", amount);
+    console.log("secret: ", secret);
     secret = new Uint8Array(base58.decode(secret));
     let senderWallet = Keypair.fromSecretKey(secret);
 

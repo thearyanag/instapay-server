@@ -9,6 +9,10 @@ const getOwner = async (domain) => {
         where: { domain: domain }
      });
 
+    if(!owner) {
+        return false;
+    }
+
     return {
         encryptedFingerprint : owner.encryptedFingerprint,   
         samirPairFingerprintEncrypted : owner.samirPairFingerprintEncrypted,
